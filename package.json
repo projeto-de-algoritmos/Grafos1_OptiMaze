@@ -1,0 +1,24 @@
+{
+  "name": "optmaze",
+  "version": "1.0.0",
+  "description": "An optmization maze",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projeto-de-algoritmos/grafos1NomeDoProjeto.git"
+  },
+  "author": "Arthur Sena e Ana Carolina Carvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projeto-de-algoritmos/grafos1NomeDoProjeto/issues"
+  },
+  "homepage": "https://github.com/projeto-de-algoritmos/grafos1NomeDoProjeto#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "1.18.4"
+  }
+}

@@ -1,4 +1,4 @@
-# NomedoProjeto
+# OptiMaze
 
 **Número da Lista**: 1<br>
 **Conteúdo da Disciplina**: Grafos 1<br>
@@ -10,21 +10,41 @@
 | 19/0063441  |  Ana Carolina Carvalho |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+O presente projeto se refere a definir e encontrar o menor caminho dentro de um labirinto. Sendo assim, o algoritmo se propõe a identificar, através de dois pontos selecionados pelo usuário em uma interface gráfica, onde os pixels os nós dos grafo. 
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: JavaScript<br>
+**Framework**: NodeJS<br>
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+É necessário a instalação do NodeJS.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Para clonar e rodar a aplicação, são necessários: [Git](https://git-scm.com) e [Node.js](https://nodejs.org/pt-br/) instalados.
+
+## Uso
+ 
+No terminal do seu computador, siga os seguintes passos:
+
+
+```powershell
+# Clone este repositório
+git clone https://github.com/projeto-de-algoritmos/grafos1OptiMaze/
+
+# Vá para o diretório da aplicação
+cd ./grafos1OptiMaze/
+
+# Instale as dependências
+npm install
+
+# Inicie a aplicação
+npm start
+
+# Acesse o seguinte link em seu navegador
+"http://localhost:3000"
+```
+
 
 ## Contribuintes 
 

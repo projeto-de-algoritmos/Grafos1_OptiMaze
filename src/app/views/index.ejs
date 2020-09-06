@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
+    <%- include('./partials/head.ejs') %>
 <body>
-    <h1>Hello World</h1>
+    <div class="main">
+        <h1>OptiMaze</h1>
+        <div class="buttons-container">
+            <a class="button" href="/play">
+                <button>Jogar</button>
+            </a>
+            <a class="button" href="/instructions">
+                <button>Instruções</button>
+            </a>
+        </div>
+    </div>
 </body>
 </html>

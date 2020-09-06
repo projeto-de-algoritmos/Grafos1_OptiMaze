@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <div class="play">
+        <div class="guide">
+            <p class="message"></p>
+
+            <div class="buttons-container">
+                <a class="button" href="/">
+                    <button>Play</button>
+                </a>
+                <a class="button" href="/">
+                    <button>Menu Principal</button>
+                </a>
+                <a class="button" href="/instructions">
+                    <button>Instruções</button>
+                </a>
+            </div>
+        </div>
+    
+        <div class="game">
+            <table>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const table = document.querySelector('table');
+        const message = document.querySelector('p');
+        let counter = 0;
+
+        message.innerHTML = 'Selecione o ponto de partida.';
+
+        for(let i = 0; i < 20; i++) {
+            let row = table.insertRow();
+            for(let j = 0; j < 20; j++) {
+                let cell = row.insertCell();
+                cell.addEventListener('click', () => {
+    
+                    if( cell.style.backgroundColor == 'blue' ||
+                        cell.style.backgroundColor == 'red'
+                    ) {
+                       return; 
+                    }
+                    if(counter === 0){
+                        cell.style.backgroundColor = 'blue';
+                        counter++;
+                        message.innerHTML = 'Selecione o ponto de chegada.';
+                    } else if (counter === 1) {
+                        cell.style.backgroundColor = 'red';
+                        counter++;
+                        message.innerHTML = 'Selecione as paredes, aperte play e espere o resultado!';
+                    } else {
+                        cell.style.backgroundColor = '#04D361';
+                        counter++;
+                    }
+                });
+            }
+        }
+
+    </script>
+</body>
+</html>

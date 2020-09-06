@@ -1,0 +1,156 @@
+<head>
+    <meta charset="UTF-8">
+    <title>OptiMaze</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* Regular CSS */
+
+        body {
+            background-color: #F0F0F7;
+        }
+
+        .main,
+        .game {
+            background-color: #FFFFFF;
+            height: 600px;
+            width: 600px;
+            margin: 5% auto 0 auto;
+            color: #774DD6;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 8px #04D361 solid;
+            border-radius: 0.8rem;
+        }
+
+        .main h1 {
+            font-size: 5rem;
+        }
+
+        .main p,
+        .play .guide p {
+            color: #6A6180;
+            text-align: center;
+            font-size: large;
+            width: 75%;
+        }
+
+        .buttons-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .guide .buttons-container:first-child {
+            display: none;
+        }
+
+        .guide .buttons-container {
+            width: 50%;
+            height: 50%;
+            margin-bottom: 10%;
+            flex-direction: column;
+        }
+
+        .buttons-container a button{
+            color: #FFFFFF;
+            background-color: #04D361;
+            width: 10rem;
+            height: 4rem;
+            border: 0;
+            border-radius: 0.8rem;
+            text-decoration: none;
+        }
+
+        .buttons-container button:hover {
+            cursor: pointer;
+            background-color: #04BF58;
+        }
+
+        .play {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .play .game {
+            margin-left: 5%;
+        }
+        
+        .play .game table {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .play .game table td {
+            border: 2px solid #04D361;
+        }
+
+        .play .guide {
+            background-color: #FFFFFF;
+            height: 600px;
+            width: 300px;
+            margin: 5% 0 0 5%;
+            color: #774DD6;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 8px #04D361 solid;
+            border-radius: 0.8rem;
+        }
+
+    </style>
+</head>

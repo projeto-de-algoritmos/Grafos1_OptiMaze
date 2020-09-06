@@ -24,41 +24,8 @@
             </table>
         </div>
     </div>
-
-    <script>
-        const table = document.querySelector('table');
-        const message = document.querySelector('p');
-        let counter = 0;
-
-        message.innerHTML = 'Selecione o ponto de partida.';
-
-        for(let i = 0; i < 20; i++) {
-            let row = table.insertRow();
-            for(let j = 0; j < 20; j++) {
-                let cell = row.insertCell();
-                cell.addEventListener('click', () => {
-    
-                    if( cell.style.backgroundColor == 'blue' ||
-                        cell.style.backgroundColor == 'red'
-                    ) {
-                       return; 
-                    }
-                    if(counter === 0){
-                        cell.style.backgroundColor = 'blue';
-                        counter++;
-                        message.innerHTML = 'Selecione o ponto de chegada.';
-                    } else if (counter === 1) {
-                        cell.style.backgroundColor = 'red';
-                        counter++;
-                        message.innerHTML = 'Selecione as paredes, aperte play e espere o resultado!';
-                    } else {
-                        cell.style.backgroundColor = '#04D361';
-                        counter++;
-                    }
-                });
-            }
-        }
-
-    </script>
+    <script src="graph/Node.js"></script>
+    <script src="graph/Graph.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

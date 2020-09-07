@@ -10,7 +10,7 @@
 | 19/0063441  |  Ana Carolina Carvalho |
 
 ## Sobre 
-O presente projeto se refere a definir e encontrar o menor caminho dentro de um labirinto. Sendo assim, o algoritmo se propõe a identificar, através de dois pontos selecionados pelo usuário em uma interface gráfica, onde os pixels os nós dos grafo. 
+Crie o seu próprio labirinto com o OptiMaze. Selecione o ponto de partida e o destino, crie os obstáculos e veja qual o melhor caminho para chegar ao ponto final.  
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
@@ -19,29 +19,37 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 **Linguagem**: JavaScript<br>
 **Framework**: NodeJS<br>
 
-É necessário a instalação do NodeJS.
+É necessário a instalação do NodeJS e Docker.
 
-Para clonar e rodar a aplicação, são necessários: [Git](https://git-scm.com) e [Node.js](https://nodejs.org/pt-br/) instalados.
+Para clonar e rodar a aplicação, são necessários: [Git](https://git-scm.com), [Node.js](https://nodejs.org/pt-br/), [Docker](https://docs.docker.com/install/) e [Docker-Compose](https://docs.docker.com/compose/install/) instalados.
 
 ## Uso
  
 No terminal do seu computador, siga os seguintes passos:
 
 
-```powershell
-# Clone este repositório
+
+#### Clone este repositório
+```bash
+cd ~/your/directory/
 git clone https://github.com/projeto-de-algoritmos/grafos1OptiMaze/
+cd grafos1OptiMaze
+````
 
-# Vá para o diretório da aplicação
+#### Vá para o diretório da aplicação
+```bash
 cd ./grafos1OptiMaze/
+````
 
-# Instale as dependências
-npm install
+#### Construa a aplicação
 
-# Inicie a aplicação
-npm start
+```bash
+docker-compose build
+docker-compose up
+```
 
-# Acesse o seguinte link em seu navegador
+#### Acesse o seguinte link em seu navegador
+```bash
 "http://localhost:3000"
 ```
 

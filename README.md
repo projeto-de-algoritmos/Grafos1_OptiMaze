@@ -41,14 +41,14 @@ cd grafos1OptiMaze
 cd ./grafos1OptiMaze/
 ````
 
-####Construa a aplicação
+#### Construa a aplicação
 
 ```bash
 docker-compose build
 docker-compose up
 ```
 
-####Acesse o seguinte link em seu navegador
+#### Acesse o seguinte link em seu navegador
 ```bash
 "http://localhost:3000"
 ```

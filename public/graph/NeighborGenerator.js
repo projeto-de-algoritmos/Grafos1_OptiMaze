@@ -1,4 +1,4 @@
-class Mapper{
+class NeighborGenerator{
 	constructor(gridSize) {
 		this.gridSize=gridSize;
 	}
@@ -27,20 +27,6 @@ class Mapper{
 
 					if((y-1) >= 0){
 						this.addNeighbor(keyName,x,y-1,false);
-					}
-					if(strict) {
-						if((x-1) >= 0 && (y-1) >= 0 ){
-							this.addNeighbor(keyName,x-1,y-1, true);
-						}
-						if((x+1) < this.gridSize && (y-1) >= 0 ){
-							this.addNeighbor(keyName,x+1,y-1, true);
-						}
-						if((x-1) >= 0 && (y+1) < this.gridSize ){
-							this.addNeighbor(keyName,x-1,y+1, true);
-						}
-						if((x+1) < this.gridSize && (y+1) < this.gridSize ){
-							this.addNeighbor(keyName,x+1,y+1, true);
-						}
 					}
 				}
 			}

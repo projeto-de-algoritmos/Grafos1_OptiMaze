@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/projeto-de-algoritmos/grafos1NomeDoProjeto#readme",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "nodemon": "1.18.4"
   }

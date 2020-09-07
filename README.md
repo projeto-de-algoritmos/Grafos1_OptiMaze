@@ -27,8 +27,6 @@ Para clonar e rodar a aplicação, são necessários: [Git](https://git-scm.com)
  
 No terminal do seu computador, siga os seguintes passos:
 
-
-
 #### Clone este repositório
 ```bash
 cd ~/your/directory/
@@ -52,7 +50,19 @@ docker-compose up
 ```bash
 "http://localhost:3000"
 ```
+## Screenshots
 
+### Menu principal
+![03](/img/img3.png)
+
+### Labirinto sem configurar
+![02](/img/img1.png)
+
+### Labirinto com configuração
+![01](/img/img2.png)
+
+### Instruções do jogo
+![04](/img/img4.png)
 
 ## Contribuintes 
 

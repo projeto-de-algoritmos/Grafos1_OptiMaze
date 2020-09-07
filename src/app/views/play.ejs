@@ -4,10 +4,10 @@
 <body>
     <div class="play">
         <div class="guide">
-            <p class="message"></p>
+            <p class="message">Selecione o ponto de início.</p>
 
             <div class="buttons-container">
-                <a class="button" href="/">
+                <a class="button" onclick="solve()">
                     <button>Play</button>
                 </a>
                 <a class="button" href="/">
@@ -20,12 +20,12 @@
         </div>
     
         <div class="game">
-            <table>
-            </table>
+            <canvas id="grid" width="600" height="600"></canvas>
         </div>
     </div>
-    <script src="graph/Node.js"></script>
     <script src="graph/Graph.js"></script>
+    <script src="graph/NeighborGenerator.js"></script>
+	<script src="graph/Grid.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

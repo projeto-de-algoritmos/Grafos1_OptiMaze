@@ -28,13 +28,14 @@
     <script src="graph/Graph.js"></script>
     <script src="index.js"></script> -->
 
-    <body style="background: green; margin: 20">
+    <body style="background: green; margin: 0">
 		<canvas id="grid" width="600" height="600"></canvas>
 		<br>
 		<script src="graph/mapper.js"></script>
 		<script src="graph/graph.js"></script>
 		<script src="graph/graphics.js"></script>
 		<script>
+            
 			var mapper = new Mapper(10);
 
 			var grid = new Grid("grid",600);
@@ -50,7 +51,7 @@
 				if(solution != undefined){
 					grid.drawSolution(solution);
 				} else {
-					alert("Nao há solução");
+					alert("Não há solução");
 				}
 				//console.log(solution);
 			}

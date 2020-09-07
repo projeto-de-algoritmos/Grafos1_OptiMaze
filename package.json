@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/projeto-de-algoritmos/grafos1NomeDoProjeto.git"
+    "url": "git+https://github.com/projeto-de-algoritmos/grafos1OptiMaze.git"
   },
   "author": "Arthur Sena e Ana Carolina Carvalho",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/projeto-de-algoritmos/grafos1NomeDoProjeto/issues"
+    "url": "https://github.com/projeto-de-algoritmos/grafos1OptiMaze/"
   },
-  "homepage": "https://github.com/projeto-de-algoritmos/grafos1NomeDoProjeto#readme",
+  "homepage": "https://github.com/projeto-de-algoritmos/grafos1OptiMaze/",
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1",

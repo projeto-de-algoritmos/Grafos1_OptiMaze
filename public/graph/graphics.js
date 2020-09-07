@@ -23,7 +23,7 @@ class Grid {
 	}
 
 	onclick(event) {
-		var res = this.grid.getKeyBounds(event.x,event.y);
+		var res = this.grid.getKeyBounds( event.x - this.offsetLeft , event.y - this.offsetTop );
 		this.grid.addBlock(res);
 	}
 	createKey(x,y)  {
@@ -46,18 +46,18 @@ class Grid {
 		var boxSize = this.width/this.gridSize;
 		if(this.start == undefined){
 			this.start = [res[1],res[0]];
-			this.grid.fillStyle = "#00FF00";
+			this.grid.fillStyle = "blue";
 			this.grid.fillRect(res[0]*boxSize,res[1]*boxSize,boxSize,boxSize);
 		} else if(this.end == undefined) {
 			this.end = [res[1],res[0]];
-			this.grid.fillStyle = "#0000FF";
+			this.grid.fillStyle = "red";
 			this.grid.fillRect(res[0]*boxSize,res[1]*boxSize,boxSize,boxSize);	
 		} else {
 			if(this.skips == undefined){
 				this.skips = [];
 			}
 			this.skips.push([res[1],res[0]]);
-			this.grid.fillStyle = "#FF0000";
+			this.grid.fillStyle = "#04D361";
 			this.grid.fillRect(res[0]*boxSize,res[1]*boxSize,boxSize,boxSize);	
 		}
 	}

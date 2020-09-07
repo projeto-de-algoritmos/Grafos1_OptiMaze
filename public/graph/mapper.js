@@ -28,7 +28,6 @@ class Mapper{
 					if((y-1) >= 0){
 						this.addNeighbor(keyName,x,y-1,false);
 					}
-					//GG XD
 					if(strict) {
 						if((x-1) >= 0 && (y-1) >= 0 ){
 							this.addNeighbor(keyName,x-1,y-1, true);

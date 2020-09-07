@@ -28,18 +28,17 @@
     <script src="graph/Graph.js"></script>
     <script src="index.js"></script> -->
 
-    <body style="background: gray; margin: 0">
+    <body style="background: green; margin: 20">
 		<canvas id="grid" width="600" height="600"></canvas>
 		<br>
 		<script src="graph/mapper.js"></script>
 		<script src="graph/graph.js"></script>
 		<script src="graph/graphics.js"></script>
 		<script>
-			var size = 10;
-			var mapper = new Mapper(size);
+			var mapper = new Mapper(10);
 
 			var grid = new Grid("grid",600);
-			grid.draw(size);
+			grid.draw(10);
 			function solve() {
 				var start = grid.getStart();
 				var end = grid.getEnd();
@@ -48,18 +47,16 @@
 
 				var dijkstra = new Graph(map);
 				var solution = dijkstra.findPath(start,end);
-				if(solution != undefined)
-				{
+				if(solution != undefined){
 					grid.drawSolution(solution);
-				}
-				else {
+				} else {
 					alert("Nao há solução");
 				}
-				console.log(solution);
-
+				//console.log(solution);
 			}
-			</script>
-		<button onclick="solve()">Solve</button>
+            </script>
+            
+		<button onclick="solve()">Solução</button>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('./partials/head.ejs') %>
-<body>
+<!-- <body>
     <div class="play">
         <div class="guide">
             <p class="message"></p>
@@ -26,6 +26,40 @@
     </div>
     <script src="graph/Node.js"></script>
     <script src="graph/Graph.js"></script>
-    <script src="index.js"></script>
+    <script src="index.js"></script> -->
+
+    <body style="background: gray; margin: 0">
+		<canvas id="grid" width="600" height="600"></canvas>
+		<br>
+		<script src="graph/mapper.js"></script>
+		<script src="graph/graph.js"></script>
+		<script src="graph/graphics.js"></script>
+		<script>
+			var size = 10;
+			var mapper = new Mapper(size);
+
+			var grid = new Grid("grid",600);
+			grid.draw(size);
+			function solve() {
+				var start = grid.getStart();
+				var end = grid.getEnd();
+				mapper.skips = grid.getSkips();
+				var map = mapper.buildMap(true);
+
+				var dijkstra = new Graph(map);
+				var solution = dijkstra.findPath(start,end);
+				if(solution != undefined)
+				{
+					grid.drawSolution(solution);
+				}
+				else {
+					alert("Nao há solução");
+				}
+				console.log(solution);
+
+			}
+			</script>
+		<button onclick="solve()">Solve</button>
+
 </body>
 </html>

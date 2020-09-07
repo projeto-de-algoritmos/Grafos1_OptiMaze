@@ -2,6 +2,7 @@ class Grid {
 	constructor(id,width) {
 		this.width = width;
 		var elem = document.getElementById(id);
+		var message = document.querySelector('p');
 		this.grid = elem.getContext("2d");
 		this.grid.clearRect(0, 0, width,width);
 		this.grid.fillStyle = "#FFFFFF";
@@ -13,7 +14,6 @@ class Grid {
 	draw(gridSize) {
 		this.gridSize = gridSize;
 		var boxSize = this.width/gridSize;
-		console.log(this.width);
 		for(var i = 0; i < gridSize ; i++) {
 			for(var j = 0; j < gridSize; j++) {
 				this.grid.rect(i*boxSize,j*boxSize,boxSize,boxSize);
@@ -47,10 +47,12 @@ class Grid {
 		if(this.start == undefined){
 			this.start = [res[1],res[0]];
 			this.grid.fillStyle = "blue";
+			message.innerText = "Selecione o ponto de chegada.";
 			this.grid.fillRect(res[0]*boxSize,res[1]*boxSize,boxSize,boxSize);
 		} else if(this.end == undefined) {
 			this.end = [res[1],res[0]];
 			this.grid.fillStyle = "red";
+			message.innerText = "Selecione os blocos de parede aperte play e espere o resultado.";
 			this.grid.fillRect(res[0]*boxSize,res[1]*boxSize,boxSize,boxSize);	
 		} else {
 			if(this.skips == undefined){

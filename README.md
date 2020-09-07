@@ -64,6 +64,8 @@ docker-compose up
 ### Instruções do jogo
 ![04](/img/img4.png)
 
+ps: Caso as imagens não renderizem, as mesmas se encontram na pasta "Img" da raiz do repositório.
+
 ## Contribuintes 
 
 <br>

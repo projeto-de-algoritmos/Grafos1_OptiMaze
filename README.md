@@ -12,9 +12,6 @@
 ## Sobre 
 Crie o seu próprio labirinto com o OptiMaze. Selecione o ponto de partida e o destino, crie os obstáculos e veja qual o melhor caminho para chegar ao ponto final.  
 
-## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
-
 ## Instalação 
 **Linguagem**: JavaScript<br>
 **Framework**: NodeJS<br>
@@ -53,18 +50,16 @@ docker-compose up
 ## Screenshots
 
 ### Menu principal
-![03](/img/img3.png)
+![03](./img/img3.png)
 
 ### Labirinto sem configurar
-![02](/img/img1.png)
+![02](./img/img1.png)
 
 ### Labirinto com configuração
-![01](/img/img2.png)
+![01](./img/img2.png)
 
 ### Instruções do jogo
-![04](/img/img4.png)
-
-ps: Caso as imagens não renderizem, as mesmas se encontram na pasta "Img" da raiz do repositório.
+![04](./img/img4.png)
 
 ## Contribuintes 
 

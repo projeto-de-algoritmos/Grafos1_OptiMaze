@@ -50,16 +50,16 @@ docker-compose up
 ## Screenshots
 
 ### Menu principal
-![03](./img/img3.png)
+<img src="./img/img3.png"></br></br>
 
 ### Labirinto sem configurar
-![02](./img/img1.png)
+<img src="./img/img1.png"></br></br>
 
 ### Labirinto com configuração
-![01](./img/img2.png)
+<img src="./img/img2.png"></br></br>
 
 ### Instruções do jogo
-![04](./img/img4.png)
+<img src="./img/img4.png"></br></br>
 
 ## Contribuintes 
 
